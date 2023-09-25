@@ -20,19 +20,21 @@
 	
  # VS 2022 환경 설정
 
- - Solution Explorer > Drop Down Menu(우클릭) > Properties
+ - VS 2022 에디터 상단 툴바 > x64에서 x86
+ - Solution Explorer > SimpleGame 이름에 우클릭 > Drop Down Menu(우클릭) > Properties
  - 상단 공통 영역
 	- Configuration > All Configuration
 	- Platform > Win32
  - C/C++ > General > Aditional include Directories
  	 - SFML에서 복사해온 파일/폴더가 있는 위치(폴더)를 선택
-	 - $(SolutionDir) : 현재 프로젝트 폴더
+	 - $(SolutionDir) : 현재 프로젝트 폴더 표시 입력	 - 최종 입력 형태 : $(SolutionDir)\External\include
 
  - Linker > General > Additional Library Directories
 	 - SFML에서 복사해온 파일/폴더가 있는 위치(폴더)를 선택
-
+	 - 최종 입력 형태 : $(SolutionDir)\External\lib
+		
  - Linker > Input > Additional Dependancies
-	 - Configuration > Release
+	 - Configuration > Release 카테고리를 선택
 
  ```
   sfml-system.lib
@@ -59,6 +61,17 @@
 	
  ## Event Handling
 
- - Event Delegate
- - Event Listenig
+ - Event Delegate : 여러개의 이벤트에 대응
+ - Event Listenig : 이벤트 감지
+ - Event Handle : 감지된 이벤트에 대해서 적절한 동작
+ 
+
+ # Game Loop
+
+ # SimpleGame 프로젝트에 구현한 Game 클래스
+
+ - 게임을 전반적으로 Control하는 클래스
+ - Enemy 생성
+ - Player 생성
+	
  

@@ -2,71 +2,24 @@
 //
 
 #include <iostream>
+#include <ctime>
 
+//#include "SimpleGame.h"
 #include "Game.h"
 
 int main()
 {
-    Game Simple;
-      
-    while (Simple.IsCreate())
-    {
-        while (Window.pollEvent(Event))
-        {
-            switch (Event.type)
-            {
-            case sf::Event::Closed:
-                Window.close();
-                break;
-            case sf::Event::KeyPressed:
-                if (Event.key.code == sf::Keyboard::Escape)
-                {
-                    Window.close();
-                }
-                break;
-            }
-        }
-        
-        Window.clear(sf::Color(200, 100, 100, 100));
+	srand(time(NULL));
 
-        Window.display();
-    }
+    Game SimpleGame;
 
-    while (Window.pollEvent(Event))
-    {
-        switch (Event.type)
-        {
-        case sf::Event::Closed:
-            Window.close();
-            break;
-        case sf::Event::KeyPressed:
-            if (Event.key.code == sf::Keyboard::Escape)
-            {
-                Window.close();
-            }
-            break;
-        }
-    }
+    // Game Loop
+	while (SimpleGame.Running())
+	{
+		SimpleGame.EventHandler();
 
-    
+		SimpleGame.Update();
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
+		SimpleGame.Render();
+	}
 }

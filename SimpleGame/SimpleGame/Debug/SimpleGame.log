@@ -1,2 +1,20 @@
-﻿  SimpleGame.cpp
+﻿  Game.cpp
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\Game.cpp(35,84): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\Game.cpp(35,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\Game.cpp(74,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\Game.cpp(89,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\Game.cpp(95,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\Game.cpp(127,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\Game.cpp(176,20): warning C4018: '<': signed/unsigned mismatch
+  SimpleGame.cpp
+C:\Users\user\SimpleGameRepo\SimpleGame\SimpleGame\SimpleGame.cpp(12,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
   SimpleGame.vcxproj -> C:\Users\user\SimpleGameRepo\SimpleGame\Debug\SimpleGame.exe
